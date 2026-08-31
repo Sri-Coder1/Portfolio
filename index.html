@@ -70,6 +70,7 @@
 
   <nav>
     <div class="logo">SR</div>
+    <a href="/assets/resume.pdf" class="nav-resume-btn" data-open-resume-modal>View Resume</a>
     <button
       class="nav-toggle"
       type="button"
@@ -91,23 +92,8 @@
       <li><a href="#experience">Journey</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#work-experience">Work Experience</a></li>
-      <li class="nav-resume-item-mobile"><a href="#resumeModal" data-open-resume-modal rel="noopener noreferrer">Resume</a></li>
     </ul>
-    <a href="#resumeModal" data-open-resume-modal rel="noopener noreferrer" class="nav-resume-btn">Resume</a>
   </nav>
-
-  <!-- Resume Modal -->
-  <div id="resumeModal" class="modal">
-    <div class="modal-content resume-modal-content">
-      <div class="modal-header">
-        <h2>My Resume</h2>
-        <button type="button" class="close-modal-btn" aria-label="Close resume viewer">&times;</button>
-      </div>
-      <div class="modal-body">
-        <iframe id="resumePdfViewer" src="/assets/resume.pdf" frameborder="0" title="Resume viewer"></iframe>
-      </div>
-    </div>
-  </div>
 
 
   <section id="home" class="hero">
@@ -126,8 +112,8 @@
       </p>
 
       <div class="cta">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Get In Touch</a>
+        <a href="#projects" class="btn cta-secondary">View Projects</a>
+        <a href="#contact" class="btn cta-primary">Get In Touch</a>
       </div>
 
       <div class="stats">
@@ -147,14 +133,13 @@
           <img alt="Srivatsankith" />
         </div>
 
-        <h3>T Srivatsankith</h3>
-
-        <p>AI & Machine Learning Engineer</p>
+        <p>AI/ML Developer</p>
 
         <div class="hero-socials">
           <a href="https://github.com/Srivatsankith" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-              <path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.49 7.49 0 0 1 8 4.69c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              <path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.49 7.49 0 0 1 8 4.69c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+
             </svg>
           </a>
 
@@ -174,37 +159,8 @@
     <h2>About Me</h2>
 
     <p>
-      I'm a Fourth-year B.Tech student in Information Science and Engineering at
-      M S Ramaiah University of Applied Sciences, Bengaluru, with a strong interest
-      in Artificial Intelligence and Machine Learning. My academic journey and
-      hands-on projects have helped me build a solid foundation in programming,
-      data-driven problem solving, and applied AI systems.
-    </p>
+      I’m a fourth-year B.Tech Information Science student at M S Ramaiah University of Applied Sciences, focused on Artificial Intelligence and Machine Learning. I build end-to-end AI solutions across  computer vision, and predictive modeling, using Python, TensorFlow, Scikit-learn, Flask, and modern web technologies to solve real-world problems.
 
-    <p>
-      I enjoy working on end-to-end AI projects - from understanding the problem
-      and preparing data, to building machine learning models and deploying them
-      as usable web applications. Some of my work includes a diabetes prediction
-      web service, an AI-powered voice assistant, and a real-time facial
-      recognition system.
-    </p>
-
-    <p>
-      I'm particularly interested in Machine Learning, Generative AI, and computer
-      vision, and I actively experiment with tools like Python, Scikit-learn,
-      TensorFlow, Flask, and modern web technologies to bring ideas to life.
-    </p>
-
-    <p>
-      I believe in learning by building. Every project I work on is an opportunity
-      to deepen my understanding of AI concepts, improve my coding skills, and
-      create solutions that can be applied to real-world challenges.
-    </p>
-
-    <p class="highlight">
-      Currently, I am actively seeking <strong>AI / Machine Learning internship
-      opportunities</strong> where I can contribute, learn from experienced
-      professionals, and grow as an AI engineer.
     </p>
   </section>
 
@@ -307,18 +263,18 @@
 
     <ul class="timeline">
       <li>
-        <strong>2019 - 2021</strong><br />
-        ICSE - New Baldwin International School (95%)
+        <span class="timeline-period">2019 - 2021</span>
+        <span class="timeline-content">ICSE - New Baldwin International School <strong>(95%)</strong></span>
       </li>
 
       <li>
-        <strong>2021 - 2023</strong><br />
-        PUC - Whitefield Global PU College (80%)
+        <span class="timeline-period">2021 - 2023</span>
+        <span class="timeline-content">PUC - Whitefield Global PU College <strong>(80%)</strong></span>
       </li>
 
       <li>
-        <strong>2023 - Present</strong><br />
-        B.Tech Information Science, MSRUAS (CGPA: 8.2)
+        <span class="timeline-period">2023 - Present</span>
+        <span class="timeline-content">B.Tech Information Science, MSRUAS <strong>(CGPA: 8.2)</strong></span>
       </li>
     </ul>
   </section>
@@ -328,27 +284,17 @@
 
     <div class="contact-layout">
       <div class="contact-info">
-        <p>Email: <a href="mailto:srivatsankith.toopurani@gmail.com">srivatsankith.toopurani@gmail.com</a></p>
         <p>Phone: <a href="tel:+919110883758">+91 9110883758</a></p>
         <p>Location: Bengaluru, India</p>
 
         <div class="contact-buttons">
-          <a href="https://www.linkedin.com/in/srivatsankith/" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
-          <a href="https://github.com/Srivatsankith" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
-          <a
-            href="#resumeModal"
-            data-open-resume-modal
-            rel="noopener noreferrer"
-            class="btn primary"
-          >View Resume</a>
-        </div>
-        
-        <div class="email-card">
+          <a href="https://www.linkedin.com/in/srivatsankith/" target="_blank" rel="noopener noreferrer" class="btn social-link linkedin-link">LinkedIn</a>
+          <a href="https://github.com/Srivatsankith" target="_blank" rel="noopener noreferrer" class="btn social-link github-link">GitHub</a>
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=srivatsankith.toopurani%40gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn primary email-cta"
+            class="btn social-link email-link"
           >Email</a>
         </div>
       </div>
@@ -358,6 +304,18 @@
   <footer>
     &copy; 2024 Srivatsankith T Ramnarayan | AI & ML Portfolio
   </footer>
+
+  <div id="resumeModal" class="modal" aria-hidden="true">
+    <div class="modal-content resume-modal-content" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+      <div class="modal-header">
+        <h2 id="resumeModalTitle">Resume</h2>
+        <button type="button" class="close-modal-btn" aria-label="Close resume">×</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="resumePdfViewer" title="Resume PDF viewer"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="js/futuristic-background.js"></script>
   <script src="js/main.js"></script>

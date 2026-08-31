@@ -803,27 +803,29 @@ function renderActivityItems(items) {
 
   if (!items.length) {
     container.innerHTML = `
-      <div class="activity-item">
-        <span>01</span>
-        <div>
+      <details class="activity-item">
+        <summary>
           <h3>No activities yet</h3>
+        </summary>
+        <div class="activity-body">
           <p>Activity content will appear here when added from the admin dashboard.</p>
         </div>
-      </div>
+      </details>
     `;
     return;
   }
 
   container.innerHTML = items
     .map(
-      (item, index) => `
-        <div class="activity-item">
-          <span>${String(index + 1).padStart(2, "0")}</span>
-          <div>
+      (item) => `
+        <details class="activity-item">
+          <summary>
             <h3>${item.title}</h3>
+          </summary>
+          <div class="activity-body">
             <p>${item.description}</p>
           </div>
-        </div>
+        </details>
       `
     )
     .join("");
@@ -837,13 +839,14 @@ function renderInternshipItems(items) {
 
   if (!items.length) {
     container.innerHTML = `
-      <div class="activity-item">
-        <span>01</span>
-        <div>
+      <details class="activity-item">
+        <summary>
           <h3>No internships yet</h3>
+        </summary>
+        <div class="activity-body">
           <p>Internship content will appear here when added from the admin dashboard.</p>
         </div>
-      </div>
+      </details>
     `;
     return;
   }
@@ -855,15 +858,16 @@ function renderInternshipItems(items) {
 
   container.innerHTML = items
     .map(
-      (item, index) => `
-        <div class="activity-item">
-          <span>${String(index + 1).padStart(2, "0")}</span>
-          <div>
+      (item) => `
+        <details class="activity-item">
+          <summary>
             <h3>${item.title}</h3>
+          </summary>
+          <div class="activity-body">
             <p>${item.description}</p>
             ${skillsHtml(item.skills)}
           </div>
-        </div>
+        </details>
       `
     )
     .join("");
